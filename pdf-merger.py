@@ -9,6 +9,7 @@ if len(argv) < 2:
 
 # initialize pdf merger
 merger = PdfMerger()
+pdfs = argv[1:]
 
 # merge pdfs
 for pdf in argv:
