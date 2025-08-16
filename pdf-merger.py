@@ -12,9 +12,11 @@ merger = PdfMerger()
 pdfs = argv[1:]
 
 # merge pdfs
-for pdf in argv:
+for pdf in pdfs:
     merger.append(pdf)
 
 # output pdfs to file
 merger.write("merged-pdfs.pdf")
+merger.close()
+
 
